@@ -1,0 +1,21 @@
+// Center elements in flex container
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+// Set text color based on background
+@function setTextColor($color) {
+  @if (lightness($color) > 50) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Set background & text color
+@mixin setBackground($color) {
+  background-color: $color;
+  color: setTextColor(($color));
+}

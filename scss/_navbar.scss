@@ -1,0 +1,27 @@
+.navbar {
+  @include flexAlignCenter();
+  padding: 2rem 0;
+  border-bottom: 1px solid $primary-color;
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.9;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    color: #fff;
+    padding: 1rem;
+    margin: 0 0.5rem;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

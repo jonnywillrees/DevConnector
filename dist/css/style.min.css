@@ -85,3 +85,12 @@ img {
 .navbar__link:hover {
   color: #17a2b8;
 }
+.landing {
+  position: relative;
+  background-image: url("../img/showcase.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 10rem;
+}

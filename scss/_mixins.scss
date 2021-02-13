@@ -1,8 +1,8 @@
 // Center elements in flex container
-@mixin flexAlignCenter {
+@mixin flexAlignCenter($justify) {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: $justify;
 }
 
 // Set text color based on background

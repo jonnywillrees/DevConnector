@@ -27,6 +27,23 @@ ul {
 img {
   width: 100%;
 }
+.x-large {
+  font-size: 6.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+.large {
+  font-size: 4.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+.lead {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+.text-primary {
+  color: #17a2b8;
+}
 .bg--primary {
   background-color: #17a2b8;
   color: #fff;
@@ -52,6 +69,119 @@ img {
   background-color: #fff;
   color: #333;
   border: 1px solid #ccc;
+}
+.margin-1 {
+  margin: 1.5rem;
+}
+.marginY-1 {
+  margin: 1.5rem 0;
+}
+.padding-1 {
+  padding: 1.5rem;
+}
+.paddingY-1 {
+  padding: 1.5rem 0;
+}
+.margin-2 {
+  margin: 2.5rem;
+}
+.marginY-2 {
+  margin: 2.5rem 0;
+}
+.padding-2 {
+  padding: 2.5rem;
+}
+.paddingY-2 {
+  padding: 2.5rem 0;
+}
+.margin-3 {
+  margin: 3.5rem;
+}
+.marginY-3 {
+  margin: 3.5rem 0;
+}
+.padding-3 {
+  padding: 3.5rem;
+}
+.paddingY-3 {
+  padding: 3.5rem 0;
+}
+.margin-4 {
+  margin: 4.5rem;
+}
+.marginY-4 {
+  margin: 4.5rem 0;
+}
+.padding-4 {
+  padding: 4.5rem;
+}
+.paddingY-4 {
+  padding: 4.5rem 0;
+}
+.margin-5 {
+  margin: 5.5rem;
+}
+.marginY-5 {
+  margin: 5.5rem 0;
+}
+.padding-5 {
+  padding: 5.5rem;
+}
+.paddingY-5 {
+  padding: 5.5rem 0;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 3.2rem;
+  margin-top: 9.6rem;
+  margin-bottom: 4.8rem;
+}
+.btn {
+  display: inline-block;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0.6rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.btn:hover {
+  background-color: #626d78;
+  color: #fff;
+}
+.btn.btn-primary {
+  background-color: #17a2b8;
+  color: #fff;
+}
+.btn.btn-primary:hover {
+  background-color: #1ab6cf;
+}
+.btn.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+.btn.btn-dark:hover {
+  background-color: #3f474e;
+}
+.btn.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+.btn.btn-success:hover {
+  background-color: #2dbc4e;
+}
+.btn.btn-danger {
+  background-color: #dc3545;
+  color: #333;
+}
+.btn.btn-danger:hover {
+  background-color: #e04b59;
 }
 .navbar {
   display: -webkit-box;
@@ -87,10 +217,57 @@ img {
 }
 .landing {
   position: relative;
-  background-image: url("../img/showcase.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url("../img/showcase.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/showcase.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
-  padding-top: 10rem;
+}
+.landing-inner {
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.form__group {
+  margin: 1.92rem 0;
+}
+.form__help-text {
+  display: block;
+  margin-top: 0.5rem;
+  color: #888;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1.92rem;
+  border: 1px solid #ccc;
 }

@@ -1,5 +1,5 @@
 .navbar {
-  @include flexAlignCenter();
+  @include flexAlignCenter(space-around);
   padding: 2rem 0;
   border-bottom: 1px solid $primary-color;
 

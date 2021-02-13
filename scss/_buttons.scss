@@ -1,0 +1,49 @@
+.btn {
+  display: inline-block;
+  background-color: $light-color;
+  color: #333;
+  padding: 0.6rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: lighten($dark-color, 20%);
+    color: #fff;
+  }
+
+  &.btn-primary {
+    @include setBackground($primary-color);
+
+    &:hover {
+      background-color: lighten($primary-color, 5%);
+    }
+  }
+
+  &.btn-dark {
+    @include setBackground($dark-color);
+
+    &:hover {
+      background-color: lighten($dark-color, 5%);
+    }
+  }
+
+  &.btn-success {
+    @include setBackground($success-color);
+
+    &:hover {
+      background-color: lighten($success-color, 5%);
+    }
+  }
+
+  &.btn-danger {
+    @include setBackground($danger-color);
+
+    &:hover {
+      background-color: lighten($danger-color, 5%);
+    }
+  }
+}

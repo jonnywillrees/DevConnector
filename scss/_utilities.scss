@@ -1,3 +1,25 @@
+// Text Styles
+.x-large {
+  font-size: 6.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+.large {
+  font-size: 4.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+.lead {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
 // Backgrounds
 .bg {
   &--primary {
@@ -19,5 +41,30 @@
   &--white {
     @include setBackground(#fff);
     border: 1px solid #ccc;
+  }
+}
+
+// Margin & Padaing
+$spaceAmounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceAmounts {
+  // All around margins
+  .margin-#{$space} {
+    margin: #{$space + 0.5}rem;
+  }
+
+  // Vertical Margin
+  .marginY-#{$space} {
+    margin: #{$space + 0.5}rem 0;
+  }
+
+  // All around padding
+  .padding-#{$space} {
+    padding: #{$space + 0.5}rem;
+  }
+
+  // Vertical padding
+  .paddingY-#{$space} {
+    padding: #{$space + 0.5}rem 0;
   }
 }

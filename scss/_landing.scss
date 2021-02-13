@@ -1,9 +1,18 @@
 .landing {
   position: relative;
-  background-image: url("../img/showcase.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/showcase.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
-  padding-top: 10rem;
+
+  &-inner {
+    color: #fff;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    @include flexAlignCenter(center);
+    flex-direction: column;
+  }
 }
